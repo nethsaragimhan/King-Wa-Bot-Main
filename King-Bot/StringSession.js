@@ -13,7 +13,7 @@ class StringSession {
     }
 
     deCrypt(string = undefined) {
-        if ('DRAGONX_SESSION' in process.env && string === undefined) {
+        if ('KINGBOT_SESSION' in process.env && string === undefined) {
             string = process.env.STRING_SESSION;
         } else if (string !== undefined) {
             if (fs.existsSync(string)) {
@@ -28,7 +28,7 @@ class StringSession {
     }
 
     createStringSession(dict) {
-        return 'DRAGONX;;;' + Buffer.from(JSON.stringify(dict)).toString('base64');
+        return 'KINGBOT;;;' + Buffer.from(JSON.stringify(dict)).toString('base64');
     }
 }
 
