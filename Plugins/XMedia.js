@@ -1494,7 +1494,7 @@ else if (Config.WORKTYPE == 'public') {
             .videoBitrate(500)
             .save('output_gif.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output_gif.mp4'), MessageType.video, {mimetype: Mimetype.gif, caption: ' ⎝[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]    '});
+                await message.sendMessage(fs.readFileSync('output_gif.mp4'), MessageType.video, {mimetype: Mimetype.gif, caption: ' [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]    '});
             });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -1537,7 +1537,7 @@ else if (Config.WORKTYPE == 'public') {
             .videoFilters('noise=alls=100:allf=t+u')
             .save('output.jpg')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: ' ⎝🛡️ Dragon X 🛡️⎠    '});
+                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: ' [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]    '});
             });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -1563,7 +1563,7 @@ else if (Config.WORKTYPE == 'public') {
             .format('mp4')
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: ` ⎝🛡️ Dragon X 🛡️⎠    \n_Interpolated to ${match[1]} FPS_`});
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: ` [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]    \n_Interpolated to ${match[1]} FPS_`});
             });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -1585,7 +1585,7 @@ else if (Config.WORKTYPE == 'public') {
             .videoFilters('eq=brightness=0.5')
             .save('output.jpg')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: ' ⎝🛡️ Dragon X 🛡️⎠    '});
+                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: ' [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]    '});
             });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -1607,7 +1607,7 @@ else if (Config.WORKTYPE == 'public') {
             .videoFilters('eq=brightness=0.5')
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption:  '⎝🛡️ Dragon X 🛡️⎠    '});
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption:  ' [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]    '});
             });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -1628,7 +1628,7 @@ else if (Config.WORKTYPE == 'public') {
             .outputOptions(["-y", "-vf", "curves=color_negative"])
             .save('output.jpg')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: ' ⎝🛡️ Dragon X 🛡️⎠    '});
+                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: ' [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]    '});
             });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -1650,7 +1650,7 @@ else if (Config.WORKTYPE == 'public') {
             .format('mp4')
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: ' ⎝🛡️ Dragon X 🛡️⎠    '});
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: ' [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]    '});
             });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -1672,7 +1672,7 @@ else if (Config.WORKTYPE == 'public') {
             .format('mp4')
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: ' ⎝🛡️ Dragon X 🛡️⎠    '});
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: ' [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]    '});
             });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -1693,7 +1693,7 @@ else if (Config.WORKTYPE == 'public') {
             .outputOptions(["-y", "-vf", "convolution=-2 -1 0 -1 1 1 0 1 2:-2 -1 0 -1 1 1 0 1 2:-2 -1 0 -1 1 1 0 1 2:-2 -1 0 -1 1 1 0 1 2"])
             .save('output.jpg')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: ' ⎝🛡️ Dragon X 🛡️⎠    '});
+                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: ' [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]    '});
             });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -1715,7 +1715,8 @@ else if (Config.WORKTYPE == 'public') {
             .format('mp4')
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: ' ⎝🛡️ Dragon X 🛡️⎠    '});
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: ' [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]    '});
+
             });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
@@ -1784,7 +1785,7 @@ else if (Config.WORKTYPE == 'public') {
             .format('mp4')
             .save('slowmo.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('slowmo.mp4'), MessageType.video, {caption: 'True Slow-Motion by  ⎝🛡️ Dragon X 🛡️⎠   '});
+                await message.sendMessage(fs.readFileSync('slowmo.mp4'), MessageType.video, {caption: 'True Slow-Motion by  [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]   '});
             });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
