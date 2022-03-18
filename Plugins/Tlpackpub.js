@@ -13,7 +13,7 @@ if (Config.WORKTYPE == 'public') {
         var ttinullimage = await axios.get(`https://telegra.ph/file/35883180004518cb15fe9.jpg`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  `╔══════════════════════
-║❌ 🍁*Dragon X LOGO PACK 1*🍁 ❌
+║ 🍁*[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] LOGO PACK 1*🍁
 ╠══════════════════════
 ║
 ║   `+Config.CAPTION+`
@@ -102,7 +102,7 @@ if (Config.WORKTYPE == 'public') {
 ╠══➢ 📛  Dec: *Send joker logo*
 ╠═➢ 🍁 Ex: *.joker T-REX*
 ║
-║      ╔═🍁 T-REX BOT 🍁═╗
+║     ╔═🍁 [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] 🍁═╗
 ║        ╚ ENJOY WITH US ╝
 ╚══════════════════════`,quoted: message.data})
 
@@ -119,7 +119,7 @@ if (Config.WORKTYPE == 'public') {
       
       var sewimage = await axios.get(`https://leyscoders-api.herokuapp.com/api/welcome?name=${topText}&group=${bottomText}&profile=https://telegra.ph/file/35883180004518cb15fe9.jpg&apikey=dappakntlll`, { responseType: 'arraybuffer' })
       
-      await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION+'\n\n   ❰🍁🔱 ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ BOT  🔱🍁❱  ',quoted: message.data})
+      await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION+'\n\n   ❰[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]❱  ',quoted: message.data})
    
    }));
    
@@ -134,7 +134,7 @@ if (Config.WORKTYPE == 'public') {
       
       var sewimage = await axios.get(`https://leyscoders-api.herokuapp.com/api/leave?name=${topText}&group=${bottomText}&profile=https://telegra.ph/file/35883180004518cb15fe9.jpg&apikey=dappakntlll`, { responseType: 'arraybuffer' })
       
-      await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION+'\n\n   ❰🍁🔱 ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ BOT  🔱🍁❱  ',quoted: message.data})
+      await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION+'\n\n   ❰[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]❱   ',quoted: message.data})
    
    }));
    
@@ -149,7 +149,7 @@ if (Config.WORKTYPE == 'public') {
       
       var sewimage = await axios.get(`https://pencarikode.xyz/api/textpro/marvel-studios?text=${topText}&text2=${bottomText}&apikey=pais`, { responseType: 'arraybuffer' })
       
-      await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION+'\n\n   ❰🍁🔱 ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ BOT  🔱🍁❱  ',quoted: message.data})
+      await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION+'\n\n   ❰[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]❱  ',quoted: message.data})
    
    }));
    
@@ -164,7 +164,7 @@ if (Config.WORKTYPE == 'public') {
       
       var sewimage = await axios.get(`https://pencarikode.xyz/api/textpro/marvel-studios2?text=${topText}&text2=${bottomText}&apikey=pais`, { responseType: 'arraybuffer' })
       
-      await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION+'\n\n   ❰🍁🔱 ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ BOT  🔱🍁❱  ',quoted: message.data})
+      await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION+'\n\n   ❰[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]❱  ',quoted: message.data})
    
    }));
    
@@ -179,7 +179,7 @@ if (Config.WORKTYPE == 'public') {
       
       var sewimage = await axios.get(`https://pencarikode.xyz/api/textpro/wolf?text=${topText}&text2=${bottomText}&apikey=pais`, { responseType: 'arraybuffer' })
       
-      await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION+'\n\n   ❰🍁🔱 ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ BOT  🔱🍁❱  ',quoted: message.data})
+      await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CAPTION+'\n\n   ❰[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]❱  ',quoted: message.data})
    
    }));
    
@@ -190,7 +190,8 @@ if (Config.WORKTYPE == 'public') {
 
         var rex = await axios.
         get(`https://leyscoders-api.herokuapp.com/api/harta-tahta?text=${encodeURIComponent(match[1])}&apikey=dappakntlll`, { responseType: 'arraybuffer' })
-        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTION+'\n\n   ❰🍁🔱 ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ BOT  🔱🍁❱',quoted: message.data})
+        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTION+'\n\n   ❰[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]❱   ',quoted: message.data})
+
 
     }));
    
@@ -200,7 +201,7 @@ if (Config.WORKTYPE == 'public') {
 
         var rex = await axios.
         get(`https://leyscoders-api.herokuapp.com/api/quote-maker?text=${encodeURIComponent(match[1])}&apikey=dappakntlll`, { responseType: 'arraybuffer' })
-        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰🍁🔱 ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ BOT  🔱🍁❱ ',quoted: message.data})
+        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]❱ ',quoted: message.data})
 
     }));
    
@@ -210,7 +211,7 @@ if (Config.WORKTYPE == 'public') {
 
         var rex = await axios.
         get(`https://leyscoders-api.herokuapp.com/api/img/circle?url=${encodeURIComponent(match[1])}&apikey=dappakntlll`, { responseType: 'arraybuffer' })
-        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰🍁🔱 ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ BOT  🔱🍁❱ ',quoted: message.data})
+        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]❱ ',quoted: message.data})
 
     }));
    
@@ -220,7 +221,7 @@ if (Config.WORKTYPE == 'public') {
 
         var rex = await axios.
         get(`https://pencarikode.xyz/api/textpro/lava?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' })
-        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰🍁🔱 ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ BOT  🔱🍁❱ ',quoted: message.data})
+        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]❱ ',quoted: message.data})
 
     }));
    
@@ -230,7 +231,7 @@ if (Config.WORKTYPE == 'public') {
 
         var rex = await axios.
         get(`https://pencarikode.xyz/api/textpro/1917-style?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' })
-        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰🍁🔱 ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ BOT  🔱🍁❱ ',quoted: message.data})
+        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]❱ ',quoted: message.data})
 
     }));
    
@@ -240,7 +241,7 @@ if (Config.WORKTYPE == 'public') {
 
         var rex = await axios.
         get(`https://pencarikode.xyz/api/textpro/minion-text?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' })
-        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰🍁🔱 ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ BOT  🔱🍁❱ ',quoted: message.data})
+        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]❱ ',quoted: message.data})
 
     }));
    
@@ -250,7 +251,7 @@ if (Config.WORKTYPE == 'public') {
 
         var rex = await axios.
         get(`https://pencarikode.xyz/api/textpro/holographic-3d?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' })
-        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰🍁🔱 ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ BOT  🔱🍁❱ ',quoted: message.data})
+        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]❱ ',quoted: message.data})
 
     }));
    
@@ -260,7 +261,7 @@ if (Config.WORKTYPE == 'public') {
 
         var rex = await axios.
         get(`https://pencarikode.xyz/api/textpro/metal-purple?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' })
-        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰🍁🔱 ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ BOT  🔱🍁❱ ',quoted: message.data})
+        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]❱ ',quoted: message.data})
 
     }));
    
@@ -270,7 +271,7 @@ if (Config.WORKTYPE == 'public') {
 
         var rex = await axios.
         get(`https://pencarikode.xyz/api/textpro/avengers-logo?text=T-Rex&text2=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' })
-        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰🍁🔱 ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ BOT  🔱🍁❱ ',quoted: message.data})
+        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]❱ ',quoted: message.data})
 
     }));
    
@@ -280,7 +281,7 @@ if (Config.WORKTYPE == 'public') {
 
         var rex = await axios.
         get(`https://pencarikode.xyz/api/textpro/halloween?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' })
-        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰🍁🔱 ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ BOT  🔱🍁❱ ',quoted: message.data})
+        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]❱ ',quoted: message.data})
 
     }));
    
@@ -290,7 +291,7 @@ if (Config.WORKTYPE == 'public') {
 
         var rex = await axios.
         get(`https://pencarikode.xyz/api/textpro/blood?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' })
-        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰🍁🔱 ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ BOT  🔱🍁❱ ',quoted: message.data})
+        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]❱ ',quoted: message.data})
     }));
       
      Trex.addrex({ pattern: 'xmas ?(.*)', fromMe: false,dontAdCommandList: true }, (async (message, match) => {
@@ -299,7 +300,7 @@ if (Config.WORKTYPE == 'public') {
 
         var rex = await axios.
         get(`https://h4ck3rs404-api.herokuapp.com/api/textprome/xmas?text=${encodeURIComponent(match[1])}&apikey=404Api`, { responseType: 'arraybuffer' })
-        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰🍁🔱 ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ BOT  🔱🍁❱ ',quoted: message.data})
+        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]❱ ',quoted: message.data})
 
     }));
       
@@ -309,7 +310,7 @@ if (Config.WORKTYPE == 'public') {
 
         var rex = await axios.
         get(`https://pencarikode.xyz/api/textpro/glossy-carbon?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' })
-        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰🍁🔱 ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ BOT  🔱🍁❱ ',quoted: message.data})
+        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]❱ ',quoted: message.data})
 
     }));
       Trex.addrex({ pattern: 'deluxe ?(.*)', fromMe: false,dontAdCommandList: true }, (async (message, match) => {
@@ -318,7 +319,7 @@ if (Config.WORKTYPE == 'public') {
 
         var rex = await axios.
         get(`https://pencarikode.xyz/api/textpro/deluxe-gold?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' })
-        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰🍁🔱 ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ BOT  🔱🍁❱ ',quoted: message.data})
+        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]❱ ',quoted: message.data})
 
     }));
       
@@ -328,7 +329,7 @@ if (Config.WORKTYPE == 'public') {
 
         var rex = await axios.
         get(`https://pencarikode.xyz/api/textpro/glossy-blue?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' })
-        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰🍁🔱 ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ BOT  🔱🍁❱ ',quoted: message.data})
+        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]❱ ',quoted: message.data})
 
     }));
       
@@ -339,7 +340,7 @@ if (Config.WORKTYPE == 'public') {
 
         var rex = await axios.
         get(`https://pencarikode.xyz/api/textpro/joker?text=${encodeURIComponent(match[1])}&apikey=pais`, { responseType: 'arraybuffer' })
-        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰🍁🔱 ᗪᖇ𝙰𝙶𝚘𝚗 Ӽ BOT  🔱🍁❱ ' ,quoted: message.data})
+        await message.sendMessage(Buffer.from(rex.data), MessageType.image, { mimetype: Mimetype.jpg, caption:  Config.CAPTION+'\n\n   ❰[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️]❱ ' ,quoted: message.data})
 
     }));
       
