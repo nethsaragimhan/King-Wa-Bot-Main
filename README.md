@@ -1,5 +1,4 @@
-
-
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=F70000&background=82FF3400&lines=%F0%9F%98%8AHi........%E2%9C%8C%EF%B8%8F;Welcome+to+King+Bot+Github+Page.;You+can+create+your+own+King++bot.;Scan++the+QR+Code.;Deploy+to+heroku.;And+use+bot+in+whatsapp.;Ok.+Follow+this+steps....)](https://git.io/typing-svg)
 
 <div align="center">		
 <img src= "https://camo.githubusercontent.com/71b837571c48af3aa60a73dbc9d5936aa359d78efbfa8a6743cbbbc16b80ef4d/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3830353930323039333930363630383138362f3830353931333937323533353539303932322f74656e6f722e676966"/>
