@@ -1,11 +1,3 @@
-/* Copyright (C) 2020 T-REX HIRUWA
-
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License
-
-T-REX HIRUWA
-*/
-
 // Komutları burada tutacağız.
 var config = require('./config');
 var Commands = [];
