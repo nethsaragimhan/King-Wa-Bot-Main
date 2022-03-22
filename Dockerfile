@@ -1,7 +1,7 @@
 FROM fusuf/whatsasena:latest
 
-RUN git clone https://github.com/nethsaragimhan/King-Wa-Bot-Main /root/WhatsAsena
-WORKDIR /root/WhatsAsena/
+RUN git clone https://github.com/nethsaragimhan/King-Wa-Bot-Main /root/WhatsAsenaDuplicated
+WORKDIR /root/WhatsAsenaDuplicated/
 ENV TZ=Europe/Istanbul
 RUN npm install supervisor -g
 RUN yarn install --no-audit
