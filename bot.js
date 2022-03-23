@@ -1,9 +1,3 @@
-/* Copyright (C) 2021 T-REX
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-T-REX HIRUWA
-*/
-
 const fs = require("fs");
 const path = require("path");
 const events = require("./events");
@@ -85,7 +79,7 @@ async function Trex () {
 
     conn.on ('credentials-updated', async () => {
         console.log(
-            chalk.blueBright.italic('▷ Login information updated! 🛡️⎠')
+            chalk.blueBright.italic('▷ Login information updated! 🇱🇰')
         );
 
         const authInfo = conn.base64EncodedAuthInfo();
@@ -97,15 +91,15 @@ async function Trex () {
     })    
 
     conn.on('connecting', async () => {
-        console.log(`${chalk.green.bold('⎝🛡️ A')}${chalk.blue.bold('LPHA 🛡️⎠')}
+        console.log(`${chalk.green.bold('🇱🇰KING')}${chalk.blue.bold('BOT✌️')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
-${chalk.blue.italic('⎝🛡️ Connecting to WhatsApp...▶')}`);
+${chalk.blue.italic('🇱🇰 Connecting to WhatsApp...▶')}`);
     });
     
 
     conn.on('open', async () => {
         console.log(
-            chalk.green.bold('⎝🛡️  Login successful!▶')
+            chalk.green.bold('🇱🇰  Login successful!▶')
         );
 
         console.log(
@@ -125,7 +119,7 @@ ${chalk.blue.italic('⎝🛡️ Connecting to WhatsApp...▶')}`);
         });
 
         console.log(
-            chalk.blueBright.italic('⎝🛡️ Installing plugins...')
+            chalk.blueBright.italic('🇱🇰 Installing plugins...')
         );
 
         fs.readdirSync('./plugins').forEach(plugin => {
@@ -135,21 +129,21 @@ ${chalk.blue.italic('⎝🛡️ Connecting to WhatsApp...▶')}`);
         });
 // ════════════════════PLUGGINS SUCCESS🍁🍁🍁
         console.log(
-            chalk.green.bold(' ⎝🛡️ ALPHA 🛡️⎠ WHATSAPP BOT WORKING!▷')
+            chalk.green.bold(' [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] WHATSAPP BOT WORKING!▷')
        );
         
         console.log(
-            chalk.blueBright.italic('⎝🛡️ ALPHA 🛡️⎠ WhatsApp User Bot v4.0.0')
+            chalk.blueBright.italic('[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] WhatsApp User Bot v4.0.0')
         );
         
          if (config.LANG == 'EN') {
-             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/cd6032c65c27e0510ddad.jpg"), MessageType.image, { caption: `⎝🛡️ Hellow !! ${conn.user.name}! \n\n*🖲️ Welcome To ⎝🛡️ ALPHA 🛡️⎠ WhatsApp User Bot  :│🖲️*\n\n\n Your Bot Working  As ${config.WORKTYPE} 🖲️.\n\n*🖲️│⎝🛡️ ALPHA 🛡️⎠ WORKING Your Account*\n\n*🖲️▷ Use the 🚀.alpha command to get bot menu...*\n\n\n*🖲️ ⎝🛡️ ALPHA 🛡️⎠ is a powerfull WhatsApp robot developed by Achi Fernando (Achiya).*\n\n*🚀 This is your LOG number. Avoid using the command here.\n\n🖲️ .up Command use for new items*\n\n`});
+             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/cd6032c65c27e0510ddad.jpg"), MessageType.image, { caption: `🇱🇰 Hellow !! ${conn.user.name}! \n\n*🖲️ Welcome To [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] WhatsApp User Bot  :│🖲️*\n\n\n Your Bot Working  As ${config.WORKTYPE} 🖲️.\n\n*🖲️│[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] WORKING Your Account*\n\n*🖲️▷ Use the 🚀.menu command to get bot menu...*\n\n\n*🖲️ [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] is a powerfull WhatsApp robot developed by 𝙽𝙴𝚃𝙷𝚂𝙰𝚁𝙰 𝙶𝙸𝙼𝙷𝙰𝙽 (Achiya).*\n\n*🚀 This is your LOG number. Avoid using the command here.\n\n🖲️ .update Command use for new items*\n\n`});
              
          } else if (config.LANG == 'SI') {
-             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/cd6032c65c27e0510ddad.jpg"), MessageType.image, { caption: `⎝🛡️ අයුබොවන් !! ${conn.user.name}! \n\n*🖲️ සාදරයෙන් ⎝🛡️ ALPHA 🛡️⎠ WhatsApp User Bot  වෙත පිලිගන්නවා :│🖲️*\n\n\n ඔබේ Bot ${config.WORKTYPE} ලෙස ක්‍රියාකරයි.\n\n*🖲️│⎝🛡️ ALPHA 🛡️⎠ ඔබගේ ගිණුමේ දැන් සක්‍රියයි*\n\n*🖲️ ⎝🛡️ ALPHA 🛡️⎠ bot සම්පූර්න මෙනුව ලබා ගැනීමට 🖲️.alpha විධානය භාවිතා කරන්න...*\n\n\n*🖲️ ⎝🛡️ ALPHA 🛡️⎠ යනූ සීඝ්‍රයෙන් වර්ධනය වන Whatsapp රොබෝවෙකි..⎝🛡️ ALPHA 🛡️⎠ වෙත ලැබෙන නව අංග හා යතාවත්කාලින කිරිම් ලබා ගැනීමට🖲️ .up විධානය භාවිතා කරන්න..*\n\n*🖲️ මෙය ඔබගේ LOG අංකයයි.මෙහි විධාන භාවිතයෙන් වළකින්න.*\n\n`});
+             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/cd6032c65c27e0510ddad.jpg"), MessageType.image, { caption: `🇱🇰 අයුබොවන් !! ${conn.user.name}! \n\n*🖲️ සාදරයෙන් [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] WhatsApp User Bot  වෙත පිලිගන්නවා :│🖲️*\n\n\n ඔබේ Bot ${config.WORKTYPE} ලෙස ක්‍රියාකරයි.\n\n*🖲️│[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] ඔබගේ ගිණුමේ දැන් සක්‍රියයි*\n\n*🖲️ [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] bot සම්පූර්ණ මෙනුව ලබා ගැනීමට 🖲️.menu විධානය භාවිතා කරන්න...*\n\n\n*🖲️ [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] යනූ සීඝ්‍රයෙන් වර්ධනය වන Whatsapp රොබෝවෙකි..\n[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] වෙත ලැබෙන නව අංග හා යතාවත්කාලින කිරිම් ලබා ගැනීමට 🖲️ .update විධානය භාවිතා කරන්න..*\n\n*🖲️ මෙය ඔබගේ LOG අංකයයි.මෙහි විධාන භාවිතයෙන් වළකින්න.*\n\n`});
              
          } else {
-             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/cd6032c65c27e0510ddad.jpg"), MessageType.image, { caption: `⎝🛡️ Hellow !!  ${conn.user.name}! \\nn*🖲️ Welcome To ⎝🛡️ ALPHA 🛡️⎠ WhatsApp User Bot  :│🖲️*\n\n\n Your Bot Working  As ${config.WORKTYPE} 🖲️.\n\n*🖲️ │⎝🛡️ ALPHA 🛡️⎠ WORKING Your Account*\n\n*🖲️▷ Use the 🚀.alpha command to get bot menu...*\n\n\n*🖲️ ⎝🛡️ ALPHA 🛡️⎠ is a powerfull WhatsApp robot developed by Achi Fernando (Achiya).*\n\n*🚀 This is your LOG number. Avoid using the command here.\n\n🖲️ .up Command use for new items*\n\n`});
+             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/cd6032c65c27e0510ddad.jpg"), MessageType.image, { caption: `🇱🇰 Hellow !!  ${conn.user.name}! \\nn*🖲 Welcome To [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] WhatsApp User Bot  :│🖲️*\n\n\n Your Bot Working  As ${config.WORKTYPE} 🖲️.\n\n*🖲️ │[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] WORKING Your Account*\n\n*🖲️▷ Use the 🚀.menu command to get bot menu...*\n\n\n*🖲️ [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] is a powerfull WhatsApp robot developed by 𝙽𝙴𝚃𝙷𝚂𝙰𝚁𝙰 𝙶𝙸𝙼𝙷𝙰𝙽 (Achiya).*\n\n*🚀 This is your LOG number. Avoid using the command here.\n\n🖲️ .update Command use for new items*\n\n`});
         }
      });
     
