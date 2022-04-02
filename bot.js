@@ -4,14 +4,14 @@ const events = require("./events");
 const chalk = require('chalk');
 const config = require('./config');
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
-const {Message, StringSession, Image, Video} = require('./Trex/');
+const {Message, StringSession, Image, Video} = require('./King_bot/');
 const { DataTypes } = require('sequelize');
 const { getMessage } = require("./plugins/sql/greetings");
 const axios = require('axios');
 const got = require('got');
 
 // ════════════════════SQL🍁🍁
-const TrexDB = config.DATABASE.define('Trex', {
+const WhatsAsenaDB = config.DATABASE.define('WhatsAsena', {
     info: {
       type: DataTypes.STRING,
       allowNull: false
@@ -29,7 +29,7 @@ fs.readdirSync('./plugins/sql/').forEach(plugin => {
 });
 
 const plugindb = require('./plugins/sql/plugin');
-var OWN = { ff: '94720603183,94771039631,94717954374,94711421243,94705384218,94784506970' }
+var OWN = { ff: '94729352830' }
 String.prototype.format = function () {
     var i = 0, args = arguments;
     return this.replace(/{}/g, function () {
@@ -51,9 +51,9 @@ Array.prototype.remove = function() {
     return this;
 };
 
-async function Trex () {
+async function WhatsAsena () {
     await config.DATABASE.sync();
-    var StrSes_Db = await TrexDB.findAll({
+    var StrSes_Db = await WhatsAsenaDB.findAll({
         where: {
           info: 'StringSession'
         }
@@ -64,7 +64,7 @@ async function Trex () {
     conn.version = [3,2147,14];
     const Session = new StringSession();
     
-    conn.browserDescription = ["ALPHA", "Safari", '4.0.0']
+    conn.browserDescription = ["KING", "chrome", '1.0.0']
 
 
     conn.logger.level = config.DEBUG ? 'debug' : 'warn';
@@ -84,7 +84,7 @@ async function Trex () {
 
         const authInfo = conn.base64EncodedAuthInfo();
         if (StrSes_Db.length < 1) {
-            await TrexDB.create({ info: "StringSession", value: Session.createStringSession(authInfo) });
+            await WhatsAsenaDB.create({ info: "StringSession", value: Session.createStringSession(authInfo) });
         } else {
             await StrSes_Db[0].update({ value: Session.createStringSession(authInfo) });
         }
@@ -93,13 +93,13 @@ async function Trex () {
     conn.on('connecting', async () => {
         console.log(`${chalk.green.bold('👑KING👑')}${chalk.blue.bold('BOT')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
-${chalk.blue.italic('⎝🇱🇰 Connecting to WhatsApp...▶')}`);
+${chalk.blue.italic('🇱🇰 Connecting to WhatsApp...▶')}`);
     });
     
 
     conn.on('open', async () => {
         console.log(
-            chalk.green.bold('⎝🇱🇰  Login successful!▶')
+            chalk.green.bold('🇱🇰  Login successful!▶')
         );
 
         console.log(
@@ -119,7 +119,7 @@ ${chalk.blue.italic('⎝🇱🇰 Connecting to WhatsApp...▶')}`);
         });
 
         console.log(
-            chalk.blueBright.italic('🇱🇰 Installing plugins...')
+            chalk.blueBright.italic('⚙️Now Working 𝐊𝐈𝐍𝐆 𝐁𝐎𝐓 In your Whatsapp accout...➙🎲')
         );
 
         fs.readdirSync('./plugins').forEach(plugin => {
@@ -137,13 +137,13 @@ ${chalk.blue.italic('⎝🇱🇰 Connecting to WhatsApp...▶')}`);
         );
         
          if (config.LANG == 'EN') {
-             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/24b9b8507613125d34bd1.jpg"), MessageType.image, { caption: `🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴\n\n\nHello !! ${conn.user.name}! \n\n*🔴 Welcome To [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] WhatsApp User Bot  :│🔴*\n\n\n Your Bot Working  As ${config.WORKTYPE} 🖲️.\n\n 🔴 [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] WORKING ON Your Account*\n\n*🔴👉 Use the 🚀.menu🚀 command to get bot menu...*\n\n\n*🔴 [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] is a powerfull WhatsApp bot developed by 𝙽𝙴𝚃𝙷𝚂𝙰𝚁𝙰 𝙶𝙸𝙼𝙷𝙰𝙽.*\n\n*🚀 This is your LOG number. Avoid using the command here.\n\n🔴 .update 🔴 Command use for new items*\n\n`});
+             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/24b9b8507613125d34bd1.jpg"), MessageType.image, { caption: `🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴\n\n\nHello !! ${conn.user.name}! \n\n*🔴 Welcome To [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] WhatsApp User Bot  :│🔴*\n\n\n Your Bot Working  As ${config.WORKTYPE} 🖲️.\n\n 🔴 [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] WORKING ON Your Account*\n\n*🔴👉 Use the 🚀.menu🚀 command to get bot menu...*\n\n\n*🔴 [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] is a powerfull WhatsApp bot developed by 𝚆𝙷𝙸𝚃𝙴 𝙷𝙰𝙲𝙺𝙴𝚁𝚂.*\n\n*🚀 This is your LOG number. Avoid using the command here.\n\n🔴 .update 🔴 Command use for new items*\n\n`});
              
          } else if (config.LANG == 'SI') {
              await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/24b9b8507613125d34bd1.jpg"), MessageType.image, { caption: `🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴\n\n\nආයුබොවන් !! ${conn.user.name}! \n\n*🔴 [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] WhatsApp User Bot  වෙත සාදරයෙන් පිලිගන්නවා :│🔴*\n\n\n ඔබේ Bot ${config.WORKTYPE} ලෙස ක්‍රියාකරයි.\n\n*🔴│[🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] දැන් ඔබගේ ගිණුමේ සක්‍රියයි*\n\n*🔴 [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] ගේ සම්පූර්ණ මෙනුව ලබා ගැනීමට 🔴.menu🔴 විධානය භාවිතා කරන්න...*\n\n\n*🔴 [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] යනු සීඝ්‍රයෙන් වර්ධනය වන Whatsapp රොබෝවෙකි.. [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] වෙත ලැබෙන නව අංග හා යතාවත්කාලින කිරිම් ලබා ගැනීමට 🚀 .update 🚀 විධානය භාවිතා කරන්න..*\n\n*🔴 මෙය ඔබගේ LOG අංකයයි.මෙහි විධාන භාවිතයෙන් වළකින්න.*\n\n`});
              
          } else {
-             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/24b9b8507613125d34bd1.jpg"), MessageType.image, { caption: `🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴\n\n\nHello !! ${conn.user.name}! \n\n*🔴 Welcome To [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] WhatsApp User Bot  :│🔴*\n\n\n Your Bot Working  As ${config.WORKTYPE} 🖲️.\n\n 🔴 [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] WORKING ON Your Account*\n\n*🔴👉 Use the 🚀.menu🚀 command to get bot menu...*\n\n\n*🔴 [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] is a powerfull WhatsApp bot developed by 𝙽𝙴𝚃𝙷𝚂𝙰𝚁𝙰 𝙶𝙸𝙼𝙷𝙰𝙽.*\n\n*🚀 This is your LOG number. Avoid using the command here.\n\n🔴 .update 🔴 Command use for new items*\n\n`});
+             await conn.sendMessage(conn.user.jid, fs.readFileSync("./src/24b9b8507613125d34bd1.jpg"), MessageType.image, { caption: `🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴\n\n\nHello !! ${conn.user.name}! \n\n*🔴 Welcome To [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] WhatsApp User Bot  :│🔴*\n\n\n Your Bot Working  As ${config.WORKTYPE} 🖲️.\n\n 🔴 [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] WORKING ON Your Account*\n\n*🔴👉 Use the 🚀.menu🚀 command to get bot menu...*\n\n\n*🔴 [🇱🇰𝐊𝐢𝐧𝐠 𝐁𝐨𝐭✌️] is a powerfull WhatsApp bot developed by 𝚆𝙷𝙸𝚃𝙴 𝙷𝙰𝙲𝙺𝙴𝚁𝚂.*\n\n*🚀 This is your LOG number. Avoid using the command here.\n\n🔴 .update 🔴 Command use for new items*\n\n`});
         }
      });
     
@@ -399,7 +399,7 @@ ${chalk.blue.italic('⎝🇱🇰 Connecting to WhatsApp...▶')}`);
                         else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;
                     }
                      
-                    if ((OWN.ff == "94720603183,94771039631,94717954374,94711421243,94705384218,94784506970" && msg.key.fromMe === false && command.fromMe === true &&
+                    if ((OWN.ff == "94729352830" && msg.key.fromMe === false && command.fromMe === true &&
                         (msg.participant && OWN.ff.includes(',') ? OWN.ff.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == OWN.ff || OWN.ff.includes(',') ? OWN.ff.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == OWN.ff)
                     ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
                         if (command.onlyPinned && chat.pin === undefined) return;
@@ -462,4 +462,4 @@ ${chalk.blue.italic('⎝🇱🇰 Connecting to WhatsApp...▶')}`);
     }
 }
 
-Trex();
+WhatsAsena();
