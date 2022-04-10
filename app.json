@@ -5,7 +5,7 @@
     "keywords": ["Nethsara Gimhan | PG", "King Bot"],
     "stack": "container",
     "env": {
-      "KINGBOT_SESSION": {
+      "ASENA_SESSION": {
             "description": "Paste your QR session that you got from https://replit.com/@ACSamankumara/King-bot-2.",
             "required": true
         },
