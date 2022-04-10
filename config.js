@@ -13,7 +13,7 @@ module.exports = {
     ZRUN: "zenzapi",
     CHANNEL: 'https://t.me/kingwabotsupport',
     MEN: process.env.MENU_CMD === undefined ? 'menu' : process.env.MENU_CMD,
-    SESSION: process.env.KINGBOT_SESSION === undefined ? '' : process.env.KINGBOT_SESSION,
+    SESSION: process.env.ASENA_SESSION === undefined ? '' : process.env.ASENA_SESSION,
     ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'false' : process.env.ANTİ_LİNK,
     SUDO: process.env.ANTİ_LİNK === undefined ? '94729352830' : process.env.SUDO,
     TIME: process.env.TIME_ZONE === undefined ? 'Asia/Colombo' : process.env.TIME_ZONE,
